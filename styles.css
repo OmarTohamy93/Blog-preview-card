@@ -29,15 +29,16 @@ body {
 
 .container {
     background-color: var(--White);
-    height: 500px;
+    height: auto;
     width: 375px;
     border: 2px solid var(--Gray950);
     border-radius: 15px;
-    margin: 250px auto;
+    margin: 200px auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 5px 5px;
+    box-shadow: 10px 8px black;
+    gap: 10px;
 }
 
 .img-container {
@@ -74,6 +75,11 @@ body {
 .about-container p,
 .course-desc-container p {
     font-family: "Figtree Medium";
+    color: var(--Gray500);
+}
+
+.about-container p {
+    color: var(--Gray950);
 }
 
 .course-desc-container {
@@ -83,9 +89,16 @@ body {
     margin-bottom: 10px;
 }
 
-.course-desc-container h1 {
+.course-desc-container a {
     font-family: "Figtree Extra Bold";
     margin-bottom: 10px;
+    color: var(--Gray950);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.course-desc-container a:hover {
+    color: var(--Yellow);
 }
 
 .author-info-container {
@@ -99,6 +112,9 @@ body {
 
 
 .author-info-container p {
-
     font-family: "Figtree Extra Bold";
+    font-size: 0.8rem;
+}
+.author-info-container img{
+    width: 10%;
 }
